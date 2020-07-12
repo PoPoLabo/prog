@@ -4,89 +4,36 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+.clear {
+  clear: left;
+}
+
 .container {
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  width: 200px;
+
 }
 
 .header-left {
@@ -101,94 +48,32 @@ header {
 .header-right a {
   line-height: 65px;
   padding: 0 25px;
-  color: white;
+  color: black;
   display: block;
   float: left;
   transition: all 0.5s;
 }
 
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+.top-wrapper {
+  margin: 0 auto;
+  background-image: url(https://raw.githubusercontent.com/PoPoLabo/prog/master/bg_top4.png);
+  background-repeat: no-repeat;
+  top: 65px;
 }
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+.top-wrapper h2 {
   color: #5f5d60;
+  text-align: right;
+  padding: 200px 0 200px ;
+  top: 0px;
+  margin: 0;
 }
 
-.heading h2 {
-  font-weight: normal;
+.fa {
+  margin-right: 5px;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .menu-icon {
@@ -199,73 +84,203 @@ footer {
   display: none;
 }
 
-.clear {
-  clear: left;
+.heading {
+  padding-top: 30px;
+  color: #5f5d60;
 }
 
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
+.heading h2 {
+  font-weight: normal;
+  text-decoration: underline;
 }
 
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+.About-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+}
+.about {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  color: #5f5d60;
+}
+.stripe{
+  font-weight: bold;
+  position: relative;
+  padding: 0.3em;
+}
+.stripe:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  height: 7px;
+  background: repeating-linear-gradient(-45deg, #eee, #eee 2px, white 2px, white 4px);
 }
 
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
 
-  .menu-icon {
-    display: block;
-  }
 
-  .top-wrapper .btn {
-    width: 100%;
-  }
+.Career-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
 
-  .twitter {
-    margin-top: 10px;
-  }
+.lesson {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
 
-  .top-wrapper {
-    text-align: left;
-  }
+.company {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+.ha {
+  border: double 5px #ffd700;
+}
+.ku {
+  border: double 5px #008000;
+}
+.pp {
+  border: double 5px #dc143c;
+}
+.qu {
+  border: double 5px #0000cd;
+}
 
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
+.icon {
+  color: #5f5d60;
+  text-align: center;
+}
 
-  .top-wrapper p {
-    font-size: 14px;
-  }
 
-  .lesson {
-    width: 100%;
-  }
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: #b3aeb5;
+  display: none;
+}
 
-  .lesson-wrapper {
-    height: 1700px;
-  }
+.text-active {
+  display: block;
+}
 
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.faq {
+  margin-top: 50px;
+}
+#faq-list {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer {
+  font-size: 12px;
+  display: none;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.question {
+  font-weight: normal;
+  text-align: left;
+  color: #5f5d60;
+}
+h3 {
+  font-weight: normal;
+  text-align: center;
+  color: #5f5d60;
+}
+.Skill-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.skill {
+  float: left;
+  padding: 20px;
+  color: #5f5d60;
+}
+.star {
+  color: gold;
+  font-size: 30px;
+  margin: 0px;
+}
+.skill img {
+  padding: 10px;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 25%;
+}
+
+.Future-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.to-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  bottom: 15px;
+  color: #000;
+  background: #c0c0c0;
+  padding: 10px 15px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.to-top:hover {
+  opacity: 1;
+}
+
+
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
