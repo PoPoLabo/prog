@@ -1,10 +1,19 @@
-/* タブレット向けレイアウト */
-@media all and (max-width: 1000px) {
+/* laptop*/
+@media all and (max-width: 1024px) {
   .lesson {
     width: 50%;
     margin-bottom: 50px;
   }
+  p {
+    font-size: 14px;
+  }
+  .star {
+    font-size: 200%;
+  }
+}
 
+/* tablet*/
+@media all and (max-width: 768px) {
   .about {
     width: 100%;
     margin-bottom: 50px;
@@ -21,10 +30,30 @@
   .heading h2 {
     font-size: 20px;
   }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 50%;
+  }
 }
 
-/* スマホ向けレイアウト */
-@media all and (max-width: 670px) {
+/* small-tablet*/
+@media all and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .menu-nav {
+    display: none;
+  }
+}
+
+/* mobile*/
+@media all and (max-width: 425px) {
   .lesson {
     width: 100%;
   }
@@ -37,6 +66,9 @@
   .text-contents {
     font-size: 12px;
   }
+
+
+
    .heading h3 {
      font-size: 15px;
    }
@@ -48,24 +80,18 @@
     text-align: left;
   }
 
-  .header-right {
-    display: none;
-  }
 
-  .menu-icon {
-    display: block;
-  }
 
-  .left {
-    width: 100%;
-  }
-  .right {
-    width: 50%;
-  }
   #faq-list {
     width: 100%;
   }
   .company {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .right {
     width: 100%;
   }
 }
