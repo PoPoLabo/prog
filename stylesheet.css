@@ -4,11 +4,15 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif ;
 }
+
 
 a {
   text-decoration: none;
+}
+li {
+  list-style: none;
 }
 
 .clear {
@@ -31,18 +35,15 @@ header {
   z-index: 10;
 }
 
-.logo {
-  width: 200px;
-
-}
-
 .header-left {
   float: left;
+}
+.logo {
+  width: 200px;
 }
 
 .header-right {
   float: right;
-  margin-right: -25px;
 }
 
 .header-right a {
@@ -50,8 +51,44 @@ header {
   padding: 0 25px;
   color: black;
   display: block;
-  float: left;
   transition: all 0.5s;
+}
+.header-right a:hover {
+  background-color: #f7f7f7;
+}
+.header-right ul li {
+  float: left;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+
+.menu-icon , .close-icon {
+  color: #5f5d60;
+  float: right;
+  font-size: 25px;
+  padding: 21px 10px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu-modal {
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  padding-top: 65px;
+  display: none;
+}
+
+.navi {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color:  white;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .top-wrapper {
@@ -60,51 +97,41 @@ header {
   background-repeat: no-repeat;
   top: 65px;
 }
-.top-wrapper h2 {
+
+h2 , h3 , p {
   color: #5f5d60;
+}
+
+.top-wrapper h2 {
+  text-decoration: none;
   text-align: right;
   padding: 200px 0 200px ;
   top: 0px;
   margin: 0;
 }
 
-.fa {
-  margin-right: 5px;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.heading {
-  padding-top: 30px;
-  color: #5f5d60;
-}
-
-.heading h2 {
+h2 {
+  padding: 70px 0 20px;
   font-weight: normal;
   text-decoration: underline;
+  margin: 0;
 }
 
-.About-wrapper {
-  padding-bottom: 50px;
+.content {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+/*About*/
+.About {
   background-color: #f7f7f7;
 }
 .about {
   width: 50%;
   float: left;
   padding: 20px;
-  color: #5f5d60;
 }
 .stripe{
   font-weight: bold;
@@ -122,14 +149,7 @@ header {
 }
 
 
-
-.Career-wrapper {
-  padding-bottom: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 0 auto;
-}
-
+/*Career*/
 .lesson {
   float: left;
   width: 25%;
@@ -155,7 +175,6 @@ header {
 }
 
 .icon {
-  color: #5f5d60;
   text-align: center;
 }
 
@@ -192,7 +211,7 @@ header {
   text-align: left;
 }
 
-.faq-list-item h3 {
+.faq-list-item h4 {
   font-size: 14px;
 }
 
@@ -215,30 +234,15 @@ header {
 .question {
   font-weight: normal;
   text-align: left;
-  color: #5f5d60;
 }
 h3 {
   font-weight: normal;
   text-align: center;
-  color: #5f5d60;
 }
-.Skill-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
+/*Skill*/
 .skill {
   float: left;
-  padding: 20px;
-  color: #5f5d60;
-}
-.star {
-  color: gold;
-  font-size: 30px;
-  margin: 0px;
-}
-.skill img {
-  padding: 10px;
 }
 .left {
   width: 50%;
@@ -247,11 +251,37 @@ h3 {
   width: 25%;
 }
 
-.Future-wrapper {
+.scontents{
+  width: 80%;
+  margin: 0 auto;
+}
+.star {
+  color: gold;
+  font-size: 300%;
+  margin: 0px;
+  text-align: center;
+}
+
+
+.sleft {
+  width: 25%;
+  display: block;
+  float: left;
+}
+
+.sright {
+  width: 50%;
+  display: block;
+  float: left;
+}
+.sicon {
+  margin-bottom:  10px;
+}
+
+
+/*Future*/
+.num04 {
   border-bottom: 1px solid #eee;
-  padding-bottom: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 
